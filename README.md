@@ -6,14 +6,14 @@ graph TD
 
     %% 流程节点（模拟3D块）
     subgraph CNN_Block_3D
-        A["📥 Input<br/>(三维输入层)"]:::inputOutput
-        B["Conv<br/>(卷积层)"]:::cnnBlock
-        C["ReLU<br/>(激活层)"]:::cnnBlock
-        D["Aver-pooling<br/>(平均池化层)"]:::poolBlock
-        E["ReLU<br/>(激活层)"]:::cnnBlock
-        F["Conv<br/>(卷积层)"]:::cnnBlock
-        G["ReLU<br/>(激活层)"]:::cnnBlock
-        H["📤 Output<br/>(三维输出层)"]:::inputOutput
+        A["📥 Input<br/>(三维输入层)"]::inputOutput
+        B["Conv<br/>(卷积层)"]::cnnBlock
+        C["ReLU<br/>(激活层)"]::cnnBlock
+        D["Aver-pooling<br/>(平均池化层)"]::poolBlock
+        E["ReLU<br/>(激活层)"]::cnnBlock
+        F["Conv<br/>(卷积层)"]::cnnBlock
+        G["ReLU<br/>(激活层)"]::cnnBlock
+        H["📤 Output<br/>(三维输出层)"]::inputOutput
 
         A --> B
         B --> C
